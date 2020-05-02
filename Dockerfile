@@ -1,4 +1,4 @@
-FROM Node:12-alpine
+FROM node:12-alpine
 
 
 LABEL version="1.0.0"
