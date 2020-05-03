@@ -18,6 +18,7 @@ RUN apk --purge -v del py-pip
 RUN rm /var/cache/apk/*
 
 COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
 
 RUN npm i -g serverless
 #ENTRYPOINT ["serverless"]
