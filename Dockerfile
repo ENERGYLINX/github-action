@@ -20,6 +20,6 @@ RUN rm /var/cache/apk/*
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 
-RUN npm i -g serverless
+#RUN npm i -g serverless
 #ENTRYPOINT ["serverless"]
 ENTRYPOINT ["/entrypoint.sh"]
